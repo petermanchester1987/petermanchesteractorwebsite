@@ -1,6 +1,43 @@
-$primary-color: #444;
+@import "config";
+@import "header";
+@import "main";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
+  @include background();
+  height: 100%;
+  margin: 0;
+  font-family: "Noto Sans JP", "Segoe UI", Tahoma, Verdana, sans-serif;
+  line-height: 1.5;
+
   background: $primary-color;
   color: white;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+
+  &.lg-heading {
+    font-size: 6rem;
+  }
+  &.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    // background: rgba(lighten($primary-color, 1), 0.5);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text-secondary {
+  color: $secondary-color;
 }
