@@ -19,6 +19,7 @@
 
     .lg-heading {
       line-height: 1;
+      margin-bottom: 7rem;
     }
 
     .sm-heading {
@@ -30,6 +31,19 @@
     bottom: 10rem;
     left: 3rem;
     padding: 0 1rem 0 0;
+  }
+
+  .media {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "img showreel music showshots";
+
+    .item {
+      padding: 0;
+    }
+
+    iframe {
+      height: 100%;
+    }
   }
 }
 
@@ -67,6 +81,17 @@
     left: 5rem;
     padding: 0 1rem 0 0;
   }
+
+  .media {
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-areas:
+      ". img img img . showreel showreel showreel . "
+      ". music music music . showshots showshots showshots .";
+
+    .item {
+      padding: 0;
+    }
+  }
 }
 
 //tablets and small laptops
@@ -91,10 +116,10 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
     .sm-heading {
-      font-size: 2rem;
+      font-size: 3rem;
     }
   }
 
@@ -146,6 +171,10 @@
       "job3";
     grid-template-columns: 1fr;
   }
+
+  .media {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 //Small tablets
@@ -172,6 +201,15 @@
       font-size: 3rem;
       margin-top: 1rem;
     }
+  }
+
+  .media {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "showreel"
+      "music"
+      "showshots";
   }
 }
 

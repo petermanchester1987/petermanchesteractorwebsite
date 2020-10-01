@@ -99,6 +99,59 @@ a {
   }
 }
 
+//media
+
+.media {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "img showreel showreel"
+    "music music showshots";
+
+  .item:nth-child(1) {
+    grid-area: img;
+  }
+  .item:nth-child(2) {
+    grid-area: showreel;
+  }
+  .item:nth-child(3) {
+    grid-area: music;
+  }
+  .item:nth-child(4) {
+    grid-area: showshots;
+  }
+
+  h3.item-header {
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  img {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+
+  iframe {
+    width: 100%;
+    border: 3px #fff solid;
+
+    &:hover {
+      opacity: 0.5;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+}
+
 #main-footer {
   text-align: center;
   padding: 1rem;
