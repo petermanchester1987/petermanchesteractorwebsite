@@ -1,5 +1,4 @@
 @import "config";
-
 @import "header";
 @import "main";
 @import "menu";
@@ -30,7 +29,7 @@ h3 {
   }
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
+    padding: 0rem 1rem;
   }
 }
 
@@ -42,3 +41,12 @@ a {
 .text-secondary {
   color: $secondary-color;
 }
+
+.tagline-box {
+  position: fixed;
+  bottom: 5rem;
+  left: 2rem;
+  padding: 0 1rem 0 0;
+}
+
+@import "mobile";

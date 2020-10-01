@@ -1,0 +1,265 @@
+// widescreens
+@include mediaXl {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-xl-screens.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 5vh;
+    }
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 0rem;
+    }
+
+    .sm-heading {
+      font-size: 2.5rem;
+    }
+  }
+  .tagline-box {
+    position: fixed;
+    bottom: 10rem;
+    left: 3rem;
+    padding: 0 1rem 0 0;
+  }
+}
+
+//Desktops and laptops
+@include mediaLg {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-tablet-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 5vh;
+    }
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 0rem;
+    }
+
+    .sm-heading {
+      font-size: 2.5rem;
+    }
+  }
+
+  .tagline-box {
+    position: fixed;
+    bottom: 8rem;
+    left: 5rem;
+    padding: 0 1rem 0 0;
+  }
+}
+
+//tablets and small laptops
+
+@include mediaMd {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 5vh;
+    }
+
+    .lg-heading {
+      line-height: 1;
+      margin-bottom: 0rem;
+    }
+    .sm-heading {
+      font-size: 2rem;
+    }
+  }
+
+  .tagline-box {
+    position: fixed;
+    bottom: 8rem;
+    left: 5rem;
+    padding: 0 1rem 0 0;
+  }
+
+  .menu ul.menu-nav,
+  .menu div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(100%, 0, 0);
+    font-size: 2rem;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(-100%, 0, 0);
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      background: url(../dist/img/peter-headshot-portrait-small.jpeg);
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+//Small tablets
+@include mediaMs {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  main {
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 3vh;
+      font-size: 3rem;
+    }
+
+    .lg-heading {
+      line-height: 1;
+    }
+  }
+}
+
+//smartphones
+@include mediaSm {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main {
+    padding: 2rem;
+    align-items: left;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 3vh;
+      font-size: 3rem;
+    }
+
+    .lg-heading {
+      line-height: 1;
+    }
+
+    .sm-heading {
+      font-size: 1.5rem;
+    }
+  }
+}
+// small smartphones
+@include mediaXs {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main {
+    padding: 2rem;
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 5vh;
+      font-size: 2.8rem;
+    }
+
+    .lg-heading {
+      line-height: 1;
+    }
+
+    .sm-heading {
+      font-size: 1.5rem;
+    }
+  }
+}
+// x-small smartphones
+@include mediaXxs {
+  body#bg-img {
+    background: url(../dist/img/peter-headshot-small-mobile-background.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  main {
+    padding: 2rem;
+    align-items: center;
+    text-align: left;
+
+    &#home h1 {
+      margin-top: 5vh;
+      font-size: 2.8rem;
+    }
+
+    .lg-heading {
+      line-height: 1;
+    }
+    .sm-heading {
+      font-size: 1.5rem;
+    }
+  }
+
+  .menu-branding {
+    .portrait {
+      background: url(../dist/img/peter-headshot-portrait-small.jpeg);
+      background-size: cover;
+      background-position: center;
+      width: 100px;
+      height: 120px;
+    }
+  }
+}
