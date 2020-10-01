@@ -15,7 +15,7 @@ body {
   line-height: 1.5;
 
   background: $primary-color;
-  color: white;
+  color: set-text-color($primary-color);
 }
 
 h1,
@@ -26,20 +26,27 @@ h3 {
 
   &.lg-heading {
     font-size: 6rem;
+    margin-bottom: 2rem;
   }
   &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0rem 1rem;
+    margin-bottom: 1rem;
   }
 }
 
+.my-1 {
+  margin: 0 0 1rem 0;
+}
+
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
 .text-secondary {
   color: $secondary-color;
+}
+.text-secondary-lighter {
+  color: lighten($secondary-color, 40%);
 }
 
 .tagline-box {
@@ -47,6 +54,57 @@ a {
   bottom: 5rem;
   left: 2rem;
   padding: 0 1rem 0 0;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    "bioimage bio bio"
+    "job1 job2 job3";
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-img {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 5%;
+    border: $secondary-color 3px solid;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.4rem;
+  }
+
+  .job-1 {
+    grid-area: job1;
+  }
+  .job-2 {
+    grid-area: job2;
+  }
+  .job-3 {
+    grid-area: job3;
+  }
+
+  .job {
+    background: lighten($primary-color, 5);
+    padding: 0.6rem;
+    border-bottom: $secondary-color 3px solid;
+    border-right: $secondary-color 3px solid;
+    border-top: lighten(set-text-color($secondary-color), 25) 1px solid;
+    border-left: lighten(set-text-color($secondary-color), 25) 1px solid;
+
+    border-radius: 5px;
+    line-height: 1.7rem;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
 }
 
 @import "mobile";

@@ -19,11 +19,10 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 0rem;
     }
 
     .sm-heading {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
   .tagline-box {
@@ -55,11 +54,10 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 0rem;
     }
 
     .sm-heading {
-      font-size: 2.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -93,7 +91,7 @@
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 0rem;
+      margin-bottom: 1rem;
     }
     .sm-heading {
       font-size: 2rem;
@@ -138,6 +136,16 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
 }
 
 //Small tablets
@@ -157,11 +165,12 @@
 
     &#home h1 {
       margin-top: 3vh;
-      font-size: 3rem;
     }
 
     .lg-heading {
       line-height: 1;
+      font-size: 3rem;
+      margin-top: 1rem;
     }
   }
 }
@@ -183,11 +192,12 @@
 
     &#home h1 {
       margin-top: 3vh;
-      font-size: 3rem;
     }
 
     .lg-heading {
       line-height: 1;
+      font-size: 3rem;
+      margin-top: 1rem;
     }
 
     .sm-heading {
@@ -205,6 +215,7 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
   main {
     padding: 2rem;
     align-items: center;
@@ -212,13 +223,13 @@
 
     &#home h1 {
       margin-top: 5vh;
-      font-size: 2.8rem;
     }
 
     .lg-heading {
       line-height: 1;
+      font-size: 3rem;
+      margin-top: 1rem;
     }
-
     .sm-heading {
       font-size: 1.5rem;
     }
@@ -242,11 +253,12 @@
 
     &#home h1 {
       margin-top: 5vh;
-      font-size: 2.8rem;
     }
 
     .lg-heading {
       line-height: 1;
+      font-size: 3rem;
+      margin-top: 1rem;
     }
     .sm-heading {
       font-size: 1.5rem;
