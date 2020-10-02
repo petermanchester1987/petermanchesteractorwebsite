@@ -13,17 +13,22 @@
     align-items: center;
     text-align: left;
 
+    &#contact {
+      padding: 2rem;
+    }
+
     &#home h1 {
       margin-top: 5vh;
     }
 
     .lg-heading {
       line-height: 1;
-      margin-bottom: 7rem;
+      margin-bottom: 2rem;
     }
 
     .sm-heading {
       font-size: 2rem;
+      margin-top: 2rem;
     }
   }
   .tagline-box {
@@ -44,6 +49,12 @@
     iframe {
       height: 100%;
     }
+  }
+
+  .form-holder {
+    align-items: center !important;
+    display: grid;
+    place-items: center;
   }
 }
 
@@ -91,6 +102,18 @@
     .item {
       padding: 0;
     }
+  }
+
+  .form-holder {
+    align-items: center !important;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .bottom-circle {
+    transform: translate(-120%, 18%);
   }
 }
 
@@ -175,6 +198,50 @@
   .media {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .form-holder {
+    align-items: center !important;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 0;
+
+    .form {
+      grid-template-columns: 1fr !important;
+
+      .contact-form:before {
+        top: -13px;
+        left: initial;
+        right: 70px;
+      }
+    }
+
+    .contact-info:before {
+      bottom: initial;
+      top: -75px;
+      right: 45px;
+      transform: scale(0.95);
+    }
+
+    .bottom-circle {
+      transform: translate(30%, 43%);
+      height: 350px;
+    }
+
+    .big-circle {
+      bottom: 75%;
+      transform: scale(0.9) translate(-40%, 30%);
+      right: 50%;
+    }
+
+    .bottom-circle {
+      display: none;
+    }
+
+    .text {
+      margin: 1rem 0 1.5rem 0;
+    }
+  }
 }
 
 //Small tablets
@@ -241,6 +308,15 @@
     .sm-heading {
       font-size: 1.5rem;
     }
+  }
+  .form {
+    padding: 0;
+  }
+  .bottom-circle {
+    display: none;
+  }
+  .contact-info:before {
+    display: none;
   }
 }
 // small smartphones
