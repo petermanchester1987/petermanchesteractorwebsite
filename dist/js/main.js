@@ -52,3 +52,69 @@ inputs.forEach((input) => {
   input.addEventListener("focus", focusFunc);
   input.addEventListener("blur", blurFunc);
 });
+
+//fullscreen the iframes
+
+var elem = document.getElementById("showreelVideo");
+
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.mozRequestFullScreen) {
+    /* Firefox */
+    elem.mozRequestFullScreen();
+  } else if (elem.webkitRequestFullscreen) {
+    /* Chrome, Safari and Opera */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    /* IE/Edge */
+    elem.msRequestFullscreen();
+  }
+}
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}
+
+var elem2 = document.getElementById("musicVideo");
+
+function openMusicFullscreen() {
+  if (elem2.requestFullscreen) {
+    elem2.requestFullscreen();
+  } else if (elem2.mozRequestFullScreen) {
+    /* Firefox */
+    elem2.mozRequestFullScreen();
+  } else if (elem2.webkitRequestFullscreen) {
+    /* Chrome, Safari and Opera */
+    elem2.webkitRequestFullscreen();
+  } else if (elem2.msRequestFullscreen) {
+    /* IE/Edge */
+    elem2.msRequestFullscreen();
+  }
+}
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) {
+    /* Firefox */
+    document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) {
+    /* Chrome, Safari and Opera */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) {
+    /* IE/Edge */
+    document.msExitFullscreen();
+  }
+}

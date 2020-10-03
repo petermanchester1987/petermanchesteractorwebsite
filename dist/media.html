@@ -8,14 +8,14 @@
       rel="stylesheet"
     />
 
+    <link rel="stylesheet" href="../css/main.min.css" />
+
     <script
       src="https://kit.fontawesome.com/0b14d34a43.js"
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/main.js" defer></script>
-
-    <link rel="stylesheet" href="../css/main.min.css" />
+    <script src="./js/main.js" async defer></script>
 
     <title>Media - Peter Manchester - Actor - Singer - Musician</title>
   </head>
@@ -71,29 +71,37 @@
           <a href="#!">
             <h3 class="item-header">Showreel</h3>
             <iframe
+              id="showreelVideo"
               src="https://www.youtube.com/embed/noYHHv5MeOQ?rel=0"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            <button class="media-btn" onclick="openFullscreen();">
+              Watch in Fullscreen
+            </button>
           </a>
         </div>
         <div class="item">
           <a href="#!">
             <h3 class="item-header">Music</h3>
             <iframe
-              src="https://www.youtube.com/embed/nlNepvPEfsQ?rel=0"
+              id="musicVideo"
+              src="https://www.youtube.com/embed/cE4ZjlzJvIY?rel=0"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            <button class="media-btn" onclick="openMusicFullscreen();">
+              Watch in Fullscreen
+            </button>
           </a>
         </div>
         <div class="item">
-          <a href="#!">
+          <a href="showgallery.html">
             <h3 class="item-header">Show Gallery</h3>
             <img
-              src="/dist/img/peter-oberon.jpg"
+              src="/dist/img/show/show-carousel7.jpg"
               alt="Peter Manchester Show Photo Gallery"
             />
           </a>
