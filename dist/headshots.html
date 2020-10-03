@@ -11,15 +11,15 @@
     <script
       src="https://kit.fontawesome.com/0b14d34a43.js"
       crossorigin="anonymous"
-      defer
     ></script>
-    <link rel="stylesheet" href="../css/main.min.css" />
 
     <script src="./js/main.js" defer></script>
 
+    <link rel="stylesheet" href="../css/main.min.css" />
+
     <title>Peter Manchester - Actor - Singer - Musician</title>
   </head>
-  <body id="bg-img" class="body">
+  <body id="bg-img">
     <header>
       <!--Menu button-->
       <div class="menu-btn">
@@ -51,29 +51,22 @@
 
     <!--Main-->
 
-    <main id="home">
-      <h1 class="lg-heading">
-        Peter <span class="text-secondary">Manchester</span>
-      </h1>
-
-      <div class="tagline-box">
-        <h2 class="sm-heading">Actor, Singer, Writer and Musician</h2>
-
-        <div class="icons">
-          <a href="#!">
-            <i class="fab fa-twitter fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fas fa-theater-masks fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-linkedin fa-2x"></i>
-          </a>
-          <a href="#!">
-            <i class="fab fa-facebook fa-2x"></i>
-          </a>
+    <div id="headshots-container">
+      <div class="carousel-container">
+        <div class="carousel-slide">
+          <img src="../dist/img/carousel5.jpg" id="lastClone" alt="" />
+          <img src="../dist/img/carousel1.jpg" alt="" />
+          <img src="../dist/img/carousel2.jpg" alt="" />
+          <img src="../dist/img/carousel3.jpg" alt="" />
+          <img src="../dist/img/carousel4.jpg" alt="" />
+          <img src="../dist/img/carousel5.jpg" alt="" />
+          <img src="../dist/img/carousel1.jpg" id="firstClone" alt="" />
         </div>
       </div>
+
+      <button id="prevBtn">Previous</button>
+
+      <button id="nextBtn">Next</button>
     </main>
   </body>
 </html>

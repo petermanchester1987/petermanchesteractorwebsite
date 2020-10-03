@@ -3,12 +3,18 @@
 @import "main";
 @import "menu";
 @import "form";
+@import "headshots";
 
 * {
   box-sizing: border-box;
 }
 
 body {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
   @include background();
   height: 100%;
   margin: 0;
@@ -114,6 +120,17 @@ a {
 
 //media
 
+.bg-lines {
+  background: linear-gradient(
+    to bottom,
+    lighten($primary-color, 10),
+    darken($primary-color, 15)
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
 .media {
   display: grid;
   grid-gap: 3rem;
@@ -147,6 +164,9 @@ a {
     border: 3px #fff solid;
 
     &:hover {
+      -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
@@ -158,10 +178,20 @@ a {
     border: 3px #fff solid;
 
     &:hover {
+      -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.75);
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+}
+
+.grow {
+  img {
+    z-index: 11;
+    transform: scale(6) translate(25%, 0%) !important;
   }
 }
 

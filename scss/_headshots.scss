@@ -1,0 +1,19 @@
+#headshots-container {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+
+  .carousel-container {
+    width: 640px;
+    margin: auto;
+    border: 5px solid red;
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
