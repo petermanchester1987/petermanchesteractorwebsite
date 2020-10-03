@@ -68,6 +68,12 @@ a {
   padding-top: 4px;
   width: 32px;
   height: 32px;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(49%) saturate(7175%)
+      hue-rotate(153deg) brightness(95%) contrast(88%);
+    // @include easeOut();
+  }
 }
 
 .about-info {
