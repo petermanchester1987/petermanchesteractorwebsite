@@ -1,7 +1,7 @@
 // widescreens
 @include mediaXl {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-xl-screens.jpeg);
+    background: url(../dist/img/peter-headshot-xl-screens.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -66,7 +66,7 @@
 //Desktops and laptops
 @include mediaLg {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-tablet-background.jpeg);
+    background: url(../dist/img/peter-headshot-tablet-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -126,7 +126,7 @@
 
 @include mediaMd {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpeg);
+    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -188,7 +188,7 @@
     }
 
     .portrait {
-      background: url(../dist/img/peter-headshot-portrait-small.jpeg);
+      background: url(../dist/img/peter-headshot-portrait-small.jpg);
       width: 150px;
       height: 150px;
     }
@@ -267,7 +267,7 @@
 //Small tablets
 @include mediaMs {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpeg);
+    background: url(../dist/img/peter-headshot-portrait-tablet-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -307,7 +307,7 @@
 //smartphones
 @include mediaSm {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpeg);
+    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -355,7 +355,7 @@
 // small smartphones
 @include mediaXs {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpeg);
+    background: url(../dist/img/peter-headshot-larger-smartphones-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -385,7 +385,7 @@
 // x-small smartphones
 @include mediaXxs {
   body#bg-img {
-    background: url(../dist/img/peter-headshot-small-mobile-background.jpeg);
+    background: url(../dist/img/peter-headshot-small-mobile-background.jpg);
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
@@ -414,7 +414,7 @@
 
   .menu-branding {
     .portrait {
-      background: url(../dist/img/peter-headshot-portrait-small.jpeg);
+      background: url(../dist/img/peter-headshot-portrait-small.jpg);
       background-size: cover;
       background-position: center;
       width: 100px;
