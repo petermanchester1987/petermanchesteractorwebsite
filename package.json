@@ -1,12 +1,22 @@
 {
   "name": "peter-manchester-actor-website-2020",
   "version": "1.0.0",
-  "description": "Responsive Portfolio Website",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petermanchester1987/petermanchesteractorwebsite.git"
+  },
+  "author": "Peter Manchester",
   "license": "ISC",
-  "dependencies": {}
+  "bugs": {
+    "url": "https://github.com/petermanchester1987/petermanchesteractorwebsite/issues"
+  },
+  "homepage": "https://github.com/petermanchester1987/petermanchesteractorwebsite#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }

@@ -7,27 +7,22 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/main.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css" />
 
     <script
       src="https://kit.fontawesome.com/0b14d34a43.js"
       crossorigin="anonymous"
+      defer
     ></script>
 
     <script src="./js/main.js" async defer></script>
-    <script src="./js/photoSlider.js" async defer></script>
 
     <title>Peter Manchester - Actor - Singer - Musician</title>
   </head>
-  <body class="bg-lines"  >
+  <body id="bg-img" class="body">
     <header>
-
-      
-      <!--Back button-->
-      <a class="back-button" href="media.html" noopener noreferrer><i class="fas fa-arrow-left fa-2x"></i></a>
-
       <!--Menu button-->
-    
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -57,21 +52,48 @@
 
     <!--Main-->
 
-    <div id="headshots-container">
-      <div class="carousel-container">
-        <i id="prevBtn" class="fas fa-arrow-left"></i>
-        <i id="nextBtn" class="fas fa-arrow-right"></i>
-        <div class="carousel-slide">
-          <img src="../dist/img/carousel5.jpg" id="lastClone" alt="" />
-          <img src="../dist/img/carousel1.jpg" alt="" />
-          <img src="../dist/img/carousel2.jpg" alt="" />
-          <img src="../dist/img/carousel3.jpg" alt="" />
-          <img src="../dist/img/carousel4.jpg" alt="" />
-          <img src="../dist/img/carousel5.jpg" alt="" />
-          <img src="../dist/img/carousel1.jpg" id="firstClone" alt="" />
+    <main id="home">
+      <h1 class="lg-heading">
+        Peter <span class="text-secondary">Manchester</span>
+      </h1>
+
+      <div class="tagline-box">
+        <h2 class="sm-heading">Actor, Singer, Writer and Musician</h2>
+
+        <div class="icons">
+          <a
+            href="http://twitter.com/PManchester1987"
+            target="_blank"
+            noopener
+            noreferrer
+          >
+            <i class="fab fa-twitter fa-2x"></i>
+          </a>
+          <a href="media.html">
+            <i class="fas fa-theater-masks fa-2x"></i>
+          </a>
+          <a
+            href="https://www.spotlight.com/2459-4502-0120
+          "
+            target="_blank"
+            noopener
+            noreferrer
+          >
+            <img
+              class="spotlight-icon"
+              src="./img/SpotlightLogoRound.svg"
+            ></img>
+          </a>
+          <a
+            href="https://www.facebook.com/pmanchester"
+            target="_blank"
+            noopener
+            noreferrer
+          >
+            <i class="fab fa-facebook fa-2x"></i>
+          </a>
         </div>
       </div>
-
     </main>
   </body>
 </html>
