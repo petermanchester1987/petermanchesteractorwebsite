@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/0b14d34a43.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/photoSlider.js" async defer></script>
+
+    <title>Peter Manchester - Actor - Singer - Musician</title>
+  </head>
+  <body class="bg-lines"  >
+    <header>
+
+      
+      <!--Back button-->
+      <a class="back-button" href="media.html" noopener noreferrer><i class="fas fa-arrow-left fa-2x"></i></a>
+
+      <!--Menu button-->
+    
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item current">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> Bio </a>
+          </li>
+          <li class="nav-item">
+            <a href="media.html" class="nav-link"> Media </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main-->
+
+    <div id="headshots-container">
+      <div class="carousel-container">
+        <i id="prevBtn" class="fas fa-arrow-left"></i>
+        <i id="nextBtn" class="fas fa-arrow-right"></i>
+        <div class="carousel-slide">
+          <img src="./img/carousel1.jpg" alt="" />
+          <img src="./img/carousel5.jpg" id="lastClone" alt="" />
+          <img src="./img/carousel2.jpg" alt="" />
+          <img src="./img/carousel3.jpg" alt="" />
+          <img src="./img/carousel4.jpg" alt="" />
+          <img src="./img/carousel5.jpg" alt="" />
+          <img src="./img/carousel1.jpg" id="firstClone" alt="" />
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

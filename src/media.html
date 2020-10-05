@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/0b14d34a43.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./js/main.js" async defer></script>
+
+    <title>Media - Peter Manchester - Actor - Singer - Musician</title>
+  </head>
+  <body class="bg-lines transition-fade">
+    <header>
+      <!--Menu button-->
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> Bio </a>
+          </li>
+          <li class="nav-item current">
+            <a href="media.html" class="nav-link"> Media </a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Main-->
+
+    <main id="about">
+      <h1 class="lg-heading my-5">
+        Peter's <span class="text-secondary">Media</span>
+      </h1>
+
+      <!--Grid section-->
+      <div class="media">
+        <div class="item headshot">
+          <a href="headshots.html">
+            <h3 class="item-header">Headshots Gallery</h3>
+            <img
+              src="./img/peter-headshot-tablet-background.jpg"
+              alt="Peter Manchester Headshot Gallery"
+            />
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <h3 class="item-header">Showreel</h3>
+            <iframe
+              id="showreelVideo"
+              src="https://www.youtube.com/embed/noYHHv5MeOQ?rel=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button class="media-btn" onclick="openFullscreen();">
+              Watch in Fullscreen
+            </button>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#!">
+            <h3 class="item-header">Music</h3>
+            <iframe
+              id="musicVideo"
+              src="https://www.youtube.com/embed/cE4ZjlzJvIY?rel=0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <button class="media-btn" onclick="openMusicFullscreen();">
+              Watch in Fullscreen
+            </button>
+          </a>
+        </div>
+        <div class="item">
+          <a href="showgallery.html">
+            <h3 class="item-header">Show Gallery</h3>
+            <img
+              src="./img/show/show-carousel7.jpg"
+              alt="Peter Manchester Show Photo Gallery"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer id="main-footer">
+      Copyright &copy;
+      <a
+        href="https://www.petermanchesterweb.com"
+        target="_blank"
+        noopener
+        noreferrer
+        >Peter Manchester</a
+      >
+      2020
+    </footer>
+  </body>
+</html>
