@@ -277,7 +277,8 @@
     background-repeat: no-repeat;
 
     &:after {
-      height: 100%;
+      height: 100vh;
+      height: calc(var(--vh, 1vh) * 100);
     }
   }
 
