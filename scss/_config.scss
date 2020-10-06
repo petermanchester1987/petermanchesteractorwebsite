@@ -15,8 +15,8 @@ $background-opacity: 0.7;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-      height: 100vh;
-      height: calc(var(--vh, 1vh) * 100);
+      max-height: 100vh;
+      max-height: calc(var(--vh, 1vh) * 100);
 
       &:after {
         content: "";
