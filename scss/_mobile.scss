@@ -252,14 +252,14 @@
     }
   }
 
-  #headshots-container {
+  .headshots-container {
     .carousel-container {
       width: 90%;
-    }
-  }
-  #showshots-container {
-    .showcarousel-container {
-      width: 95%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
   }
 }
@@ -350,6 +350,17 @@
   }
   .contact-info:before {
     display: none;
+  }
+
+  .headshots-container {
+    .carousel-container {
+      width: 95%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 }
 // small smartphones

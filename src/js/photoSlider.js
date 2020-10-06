@@ -1,3 +1,18 @@
+const loaderHolder = document.querySelector(".loader-holder");
+const main = document.querySelector(".headshots-container");
+
+function loadStart() {
+  setTimeout(() => {
+    loaderHolder.style.opacity = 0;
+    loaderHolder.style.display = "none";
+
+    main.style.display = "grid";
+
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 3000);
+}
+loadStart();
+
 //Photo slider
 
 const carouselSlide = document.querySelector(".carousel-slide");

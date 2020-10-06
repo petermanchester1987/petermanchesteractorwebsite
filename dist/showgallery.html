@@ -32,15 +32,15 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
 
     <script
       src="https://kit.fontawesome.com/0b14d34a43.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/main.js" async defer></script>
-    <script src="./js/showshots.js" async defer></script>
 
+    <script src="./js/main.js" async defer></script>
+    <script src="./js/photoSlider.js" async defer></script>
 
 
     <title>Peter Manchester - Actor - Singer - Musician</title>
@@ -80,12 +80,34 @@
 
     <!--Main-->
 
-    <div id="showshots-container">
-      <div class="showcarousel-container">
-        <i id="showPrevBtn" class="fas fa-arrow-left"></i>
-        <i id="showNextBtn" class="fas fa-arrow-right"></i>
-        <div class="showcarousel-slide">
-          <img src="./img/show/show-carousel12.jpg" id="showLastClone" alt="" />
+
+    <div class="loader-holder">
+      <div class="loader">
+        <div class="circle">
+          <div class="inner"></div>
+        </div>
+        <div class="circle">
+          <div class="inner"></div>
+        </div>
+        <div class="circle">
+          <div class="inner"></div>
+        </div>
+        <div class="circle">
+          <div class="inner"></div>
+        </div>
+        <div class="circle">
+          <div class="inner"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="headshots-container">
+      <div class="carousel-container">
+        <i id="prevBtn" class=" fas fa-arrow-left"></i>
+        <i id="nextBtn" class=" fas fa-arrow-right"></i>
+        <div class="carousel-slide">
+          <img src="./img/show/show-carousel12.jpg" id="lastClone" alt="" />
           <img src="./img/show/show-carousel1.jpg" alt="" />
           <img src="./img/show/show-carousel2.jpg" alt="" />
           <img src="./img/show/show-carousel3.jpg" alt="" />
@@ -98,7 +120,7 @@
           <img src="./img/show/show-carousel10.jpg" alt="" />
           <img src="./img/show/show-carousel11.jpg" alt="" />
           <img src="./img/show/show-carousel12.jpg" alt="" />
-          <img src="./img/show/show-carousel1.jpg" id="showFirstClone" alt="" />
+          <img src="./img/show/show-carousel1.jpg" id="firstClone" alt="" />
         </div>
       </div>
 
