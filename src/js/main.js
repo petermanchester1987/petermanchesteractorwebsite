@@ -1,3 +1,9 @@
+// We listen to the resize event
+
+// We execute the same script as before
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
 // Select DOM
 const myMenuBtn = document.querySelector(".menu-btn");
 const myMenu = document.querySelector(".menu");
