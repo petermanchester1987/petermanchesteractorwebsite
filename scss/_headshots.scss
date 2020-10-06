@@ -41,7 +41,7 @@
     .carousel-slide {
       display: flex;
       max-width: 100%;
-      height: auto;
+      align-items: flex-start;
 
       img {
         max-width: 100%;
