@@ -1,6 +1,15 @@
 const loaderHolder = document.querySelector(".loader-holder");
 const main = document.querySelector(".headshots-container");
 
+let stateCheck = setInterval(() => {
+  if (document.readyState === "complete") {
+    clearInterval(stateCheck);
+    // document ready
+
+    loadStart();
+  }
+}, 100);
+
 function loadStart() {
   setTimeout(() => {
     loaderHolder.style.opacity = 0;
@@ -11,7 +20,6 @@ function loadStart() {
     setTimeout(() => (main.style.opacity = 1), 50);
   }, 3000);
 }
-loadStart();
 
 //Photo slider
 
