@@ -45,7 +45,11 @@
       img {
         max-width: 100%;
         height: auto;
+<<<<<<< HEAD
         object-fit: cover;
+=======
+        object-fit: contain;
+>>>>>>> master
       }
     }
   }
