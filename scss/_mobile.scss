@@ -272,8 +272,13 @@
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     background-position: center;
     background-repeat: no-repeat;
+
+    &:after {
+      height: 100%;
+    }
   }
 
   main {
