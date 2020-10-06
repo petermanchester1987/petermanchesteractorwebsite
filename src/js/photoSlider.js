@@ -16,7 +16,6 @@ function loadStart() {
     loaderHolder.style.display = "none";
 
     main.style.display = "grid";
-    carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
     setTimeout(() => (main.style.opacity = 1), 50);
   }, 3000);
@@ -32,7 +31,7 @@ const nextBtn = document.querySelector("#nextBtn");
 let counter = 1;
 const size = carouselImages[0].clientWidth;
 
-// carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
+carouselSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 //button listeners
 
