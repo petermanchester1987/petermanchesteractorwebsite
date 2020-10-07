@@ -2,7 +2,7 @@
 **This is a static HTML, SCSS and JavaScript website for myself as an actor!**
 
 I decided to showcase some of my HTML, CSS and SASS knowledge with a personal website. 
-I previosuly had only used Wordpress, but as this was purely a front end site, 
+I previosuly had only made my old actor websites with Wordpress, but as this was purely a front end site, 
 I decided to build it using vanilla Javascript and host it on Netlify.
 
 It took me just under a week to build and clean up. 
