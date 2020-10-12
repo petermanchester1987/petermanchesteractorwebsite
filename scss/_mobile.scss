@@ -360,11 +360,14 @@
       .bottom-circle {
         display: none;
       }
+      .big-circle {
+        display: none;
+      }
 
       .form {
         .contact-info {
           width: 100%;
-          padding: 1rem;
+          padding: 1rem 0.5rem;
           align-items: center;
           display: grid;
           place-items: center;
@@ -423,6 +426,25 @@
 
   .showgallerylink {
     z-index: 11;
+  }
+
+  .form {
+    .contact-info {
+      width: 80%;
+      padding: 1rem 0.5rem;
+      align-items: center;
+      display: grid;
+      place-items: center;
+
+      &:before {
+        display: none;
+      }
+
+      h3,
+      p {
+        text-align: center;
+      }
+    }
   }
 }
 // x-small smartphones
