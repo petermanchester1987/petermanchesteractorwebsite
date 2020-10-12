@@ -4,29 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="Peter Manchester is a Professional Actor Writer Singer Musician. He works in London and worldwide in Theatre, TV, Film and on cruise ships."
-  />
-  <meta property="og:locale" content="en_UK" />
-  <meta property="og:type" content="website" />
-  <meta
-    property="og:title"
-    content="Peter Manchester - Peter Manchester Actor Writer Singer Musician"
-  />
-  <meta
-    property="og:description"
-    content="Peter Manchester is a Professional Actor Writer Singer Musician. He works in London and worldwide in Theatre, TV, Film and on cruise ships."
-  />
-  <meta property="og:url" content="https://petermanchester.com/" />
-  <link rel="canonical" href="https://petermanchester.com/" />
-  <meta property="og:site_name" content="Peter Manchester" />
+      name="description"
+      content="Peter Manchester is a Professional Actor Writer Singer Musician. He works in London and worldwide in Theatre, TV, Film and on cruise ships."
+    />
+    <meta property="og:locale" content="en_UK" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Peter Manchester - Peter Manchester Actor Writer Singer Musician"
+    />
+    <meta
+      property="og:description"
+      content="Peter Manchester is a Professional Actor Writer Singer Musician. He works in London and worldwide in Theatre, TV, Film and on cruise ships."
+    />
+    <meta property="og:url" content="https://petermanchester.com/" />
+    <link rel="canonical" href="https://petermanchester.com/" />
+    <meta property="og:site_name" content="Peter Manchester" />
 
-  <meta
-    name="google-site-verification"
-    content="3LzBLWKZQZppfvKNC502JH4JDdPJmXOI46SUhniURfg"
-  />
+    <meta
+      name="google-site-verification"
+      content="3LzBLWKZQZppfvKNC502JH4JDdPJmXOI46SUhniURfg"
+    />
 
-  <link rel="icon" type="image/png" size="64x64" href="./img/favicon.png" />
+    <link rel="icon" type="image/png" size="64x64" href="./img/favicon.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
       rel="stylesheet"
@@ -38,20 +38,21 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./js/main.js" async defer></script>
-    <script src="./js/photoSlider.js" async defer></script>
+    <script src="./js/main.js" defer></script>
+    <script src="./js/headshots.js" defer></script>
 
     <title>Peter Manchester - Actor - Singer - Musician</title>
   </head>
-  <body class="bg-lines"  >
-    <header>
 
-      
+  <body class="bg-lines">
+    <header>
       <!--Back button-->
-      <a class="back-button" href="media.html" noopener noreferrer><i class="fas fa-arrow-left fa-2x"></i></a>
+      <a class="back-button" href="media.html" noopener noreferrer
+        ><i class="fas fa-arrow-left fa-2x"></i
+      ></a>
 
       <!--Menu button-->
-    
+
       <div class="menu-btn">
         <div class="btn-line"></div>
         <div class="btn-line"></div>
@@ -80,44 +81,22 @@
     </header>
 
     <!--Main-->
+    <main>
+      <section>
+        <div class="headshots-container">
+          <div class="main-img">
+            <img id="current" src="./img/carousel1.jpg" alt="" />
+          </div>
 
-    <div class="loader-holder">
-      <div class="loader">
-        <div class="circle">
-          <div class="inner"></div>
+          <div class="imgs">
+            <img src="./img/carousel1.jpg" alt="" />
+            <img src="./img/carousel2.jpg" alt="" />
+            <img src="./img/carousel3.jpg" alt="" />
+            <img src="./img/carousel4.jpg" alt="" />
+            <img src="./img/carousel5.jpg" alt="" />
+          </div>
         </div>
-        <div class="circle">
-          <div class="inner"></div>
-        </div>
-        <div class="circle">
-          <div class="inner"></div>
-        </div>
-        <div class="circle">
-          <div class="inner"></div>
-        </div>
-        <div class="circle">
-          <div class="inner"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="headshots-container">
-      <div class="carousel-container">
-        <i id='prevBtn' class=" fas fa-arrow-left"></i>
-        <i id='nextBtn' class="fas fa-arrow-right"></i>
-        <div class="carousel-slide">
-
-          <img src="./img/carousel5.jpg" id="lastClone" alt="" />
-          <img src="./img/carousel1.jpg" alt="" />
-          <img src="./img/carousel2.jpg" alt="" />
-          <img src="./img/carousel3.jpg" alt="" />
-          <img src="./img/carousel4.jpg" alt="" />
-          <img src="./img/carousel5.jpg" alt="" />
-          <img src="./img/carousel1.jpg" id="firstClone" alt="" />
-        </div>
-      </div>
-    </div>
-
+      </section>
     </main>
   </body>
 </html>
